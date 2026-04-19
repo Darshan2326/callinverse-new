@@ -10,7 +10,6 @@ class OnboardingVew extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       body: SafeArea(
@@ -70,7 +69,9 @@ class OnboardingVew extends StatelessWidget {
                   CustomButton(
                     title: "Continue with phone".tr,
                     color: AppColors.primarydarken,
-                    onTap: () {},
+                    onTap: () {
+                      Get.toNamed(Routes.PHONESIGNUP);
+                    },
                   ),
 
                   SizedBox(height: Get.height * 0.02),

@@ -8,5 +8,7 @@ abstract class Routes {
   static const EMAILSIGNUP = "/emailsignup";
   static const EMAILVERIFY = "/emailverify";
   static const PROFILEACCOUNT = "/profileaccount";
+  static const PHONESIGNUP = "/phonesignup";
+  static const PHONEVERIFY = "/phoneverify";
 
 }

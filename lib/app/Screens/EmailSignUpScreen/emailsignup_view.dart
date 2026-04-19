@@ -1,3 +1,4 @@
+import 'package:calliverse/app/Screens/EmailSignUpScreen/emailsignup_controller.dart';
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/core/widgets/buildTextField.dart';
 import 'package:calliverse/app/core/widgets/custom_button.dart';
@@ -6,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
-class EmailsignupView extends StatelessWidget {
+class EmailsignupView extends GetView<EmailsignupController> {
   const EmailsignupView({super.key});
 
   @override

@@ -3,7 +3,7 @@ import 'package:get/instance_manager.dart';
 
 class OnboardingBinding extends Bindings {
   @override
-  void dependencies(){
+  void dependencies() {
     Get.put<OnboardingController>(OnboardingController());
   }
 }

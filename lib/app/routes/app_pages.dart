@@ -10,6 +10,10 @@ import 'package:calliverse/app/Screens/LoginScreen/login_binding.dart';
 import 'package:calliverse/app/Screens/LoginScreen/login_view.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_binding.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_vew.dart';
+import 'package:calliverse/app/Screens/PhoneSignUpScreen/phonesignup_binding.dart';
+import 'package:calliverse/app/Screens/PhoneSignUpScreen/phonesignup_view.dart';
+import 'package:calliverse/app/Screens/PhoneVerifyScreen/phoneverify_binding.dart';
+import 'package:calliverse/app/Screens/PhoneVerifyScreen/phoneverify_view.dart';
 import 'package:calliverse/app/Screens/ProfileAccount/profile%20account_binding.dart';
 import 'package:calliverse/app/Screens/ProfileAccount/profileaccount_view.dart';
 import 'package:calliverse/app/Screens/SplaceScreen/splacescreen_binding.dart';
@@ -52,6 +56,16 @@ class AppPages {
       name: Routes.PROFILEACCOUNT,
       page: () => ProfileaccountView(),
       binding: ProfileaccountBinding(),
+    ),
+    GetPage(
+      name: Routes.PHONESIGNUP,
+      page: () => PhonesignupView(),
+      binding: PhonesignupBinding(),
+    ),
+    GetPage(
+      name: Routes.PHONEVERIFY,
+      page: () => PhoneverifyView(),
+      binding: PhoneverifyBinding(),
     ),
 
     GetPage(name: Routes.HOME, page: () => HomeView(), binding: HomeBinding()),
