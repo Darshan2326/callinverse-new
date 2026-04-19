@@ -4,6 +4,6 @@ import 'package:get/instance_manager.dart';
 class SplacescreenBinding extends Bindings{
   @override
   void dependencies(){
-    Get.lazyPut<SplacescreenController>(()=>SplacescreenController());
+    Get.put<SplacescreenController>(SplacescreenController());
   }
 }

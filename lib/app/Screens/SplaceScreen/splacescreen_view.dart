@@ -1,10 +1,9 @@
-import 'package:calliverse/app/Screens/SplaceScreen/splacescreen_controller.dart';
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SplacescreenView extends GetView<SplacescreenController> {
+class SplacescreenView extends StatelessWidget {
   const SplacescreenView({super.key});
 
   @override

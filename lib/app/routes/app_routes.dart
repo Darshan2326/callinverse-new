@@ -5,5 +5,6 @@ abstract class Routes {
   static const ONBOARDING = "/onboarding";
   static const HOME = '/home';
   static const LOGIN = '/login';
+  static const EMAILSIGNUP = "/emailsignup";
 
 }

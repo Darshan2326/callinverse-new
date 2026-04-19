@@ -1,13 +1,11 @@
-import 'package:calliverse/app/Screens/OnBording/onboarding_controller.dart';
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/core/widgets/custom_button.dart';
 import 'package:calliverse/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:get/route_manager.dart';
-import 'package:get/state_manager.dart';
 
-class OnboardingVew extends GetView<OnboardingController> {
+class OnboardingVew extends StatelessWidget {
   const OnboardingVew({super.key});
 
   @override
@@ -20,25 +18,27 @@ class OnboardingVew extends GetView<OnboardingController> {
         child: SingleChildScrollView(
           child: ConstrainedBox(
             constraints: BoxConstraints(
+              minHeight: MediaQuery.of(context).size.height,
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 children: [
                   SizedBox(height: height * 0.05),
-          
+
                   /// Illustration
                   Image.asset(
                     'assets/logo/Illustration.png',
-                    height: height * 0.3,   // ✅ responsive
+                    height: height * 0.3, // ✅ responsive
                     fit: BoxFit.contain,
                   ),
-          
+
                   SizedBox(height: height * 0.03),
-          
+
                   /// Title
                   Text(
-                    "Connect easily with your family and friends over countries".tr,
+                    "Connect easily with your family and friends over countries"
+                        .tr,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       fontSize: 22,
@@ -47,38 +47,35 @@ class OnboardingVew extends GetView<OnboardingController> {
                       height: 1.4,
                     ),
                   ),
-          
+
                   SizedBox(height: height * 0.20),
-          
+
                   /// Terms
                   Text(
                     "Terms & Privacy Policy".tr,
-                    style: TextStyle(
-                      color: Colors.grey.shade600,
-                      fontSize: 13,
-                    ),
+                    style: TextStyle(color: Colors.grey.shade600, fontSize: 13),
                   ),
-          
+
                   SizedBox(height: height * 0.02),
-          
+
                   /// Email Button
                   CustomButton(
                     title: "Continue with email".tr,
                     color: AppColors.primary,
-                    onTap: () {},
+                    onTap: () => Get.toNamed(Routes.EMAILSIGNUP),
                   ),
-          
+
                   const SizedBox(height: 15),
-          
+
                   /// Phone Button
                   CustomButton(
                     title: "Continue with phone".tr,
                     color: AppColors.primarydarken,
                     onTap: () {},
                   ),
-          
+
                   const SizedBox(height: 20),
-          
+
                   /// Login
                   GestureDetector(
                     onTap: () {},
@@ -91,7 +88,7 @@ class OnboardingVew extends GetView<OnboardingController> {
                       ),
                     ),
                   ),
-          
+
                   // SizedBox(height: height * 0.03),
                 ],
               ),
@@ -101,6 +98,4 @@ class OnboardingVew extends GetView<OnboardingController> {
       ),
     );
   }
-
-
 }

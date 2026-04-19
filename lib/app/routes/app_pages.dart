@@ -1,5 +1,7 @@
 // 2️⃣ Define Pages with Bindings
 
+import 'package:calliverse/app/Screens/EmailSignUpScreen/emailsignup_binding.dart';
+import 'package:calliverse/app/Screens/EmailSignUpScreen/emailsignup_view.dart';
 import 'package:calliverse/app/Screens/HomeScreen/home_binding.dart';
 import 'package:calliverse/app/Screens/HomeScreen/home_view.dart';
 import 'package:calliverse/app/Screens/LoginScreen/login_binding.dart';
@@ -19,16 +21,18 @@ class AppPages {
   static final routes = [
     GetPage(name: Routes.SPLACESCREEN, page: ()=> SplacescreenView(),binding: SplacescreenBinding()),
     GetPage(name: Routes.ONBOARDING, page: ()=> OnboardingVew(),binding:OnboardingBinding() ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => LoginView(),
+      binding: LoginBinding(),
+    ),
+    GetPage(name: Routes.EMAILSIGNUP, page: ()=>EmailsignupView(),binding: EmailsignupBinding()),
     
     GetPage(
       name: Routes.HOME,
       page: () => HomeView(),
       binding: HomeBinding(),
     ),
-    GetPage(
-      name: Routes.LOGIN,
-      page: () => LoginView(),
-      binding: LoginBinding(),
-    ),
+    
   ];
 }

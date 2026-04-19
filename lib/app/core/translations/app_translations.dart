@@ -10,6 +10,9 @@ class AppTranslations extends Translations {
           "Terms & Privacy Policy":"Terms & Privacy Policy",
           "Continue with email":"Continue with email",
           "Continue with phone":"Continue with phone",
+          "Sign up with email":"Sign up with email",
+          "Please create your account using your email.":"Please create your account using your email.",
+          "Email":"Email",
         },
         'hi_IN': {
           'login': 'लॉगिन',
@@ -18,6 +21,9 @@ class AppTranslations extends Translations {
           "Terms & Privacy Policy":"नियम और गोपनीयता नीति",
           "Continue with email":"ईमेल से जारी रखें",
           "Continue with phone":"फ़ोन से जारी रखें",
+          "Sign up with email":"ईमेल के लिए साइन इन करें",
+          "Please create your account using your email.":"कृपया अपने ईमेल का उपयोग करके अपना खाता बनाएँ।",
+          "Email":"ईमेल",
         },
         'gu_IN': {
           'login': 'લૉગિન',
@@ -26,6 +32,9 @@ class AppTranslations extends Translations {
           "Terms & Privacy Policy":"શરતો અને ગોપનીયતા નીતિ",
           "Continue with email":"ઇમેઇલ સાથે ચાલુ રાખો",
           "Continue with phone":"ફોન સાથે ચાલુ રાખો",
+          "Sign up with email":"ઇમેઇલ દ્વારા સાઇન અપ કરો",
+          "Please create your account using your email.":"કૃપા કરીને તમારા ઇમેઇલનો ઉપયોગ કરીને તમારું એકાઉન્ટ બનાવો.",
+          "Email":"ઇમેઇલ",
         },
       };
 }
