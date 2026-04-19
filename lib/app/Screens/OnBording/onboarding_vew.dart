@@ -18,22 +18,22 @@ class OnboardingVew extends StatelessWidget {
         child: SingleChildScrollView(
           child: ConstrainedBox(
             constraints: BoxConstraints(
-              minHeight: MediaQuery.of(context).size.height,
+              // minHeight: MediaQuery.of(context).size.height,
             ),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 children: [
-                  SizedBox(height: height * 0.05),
+                  SizedBox(height: Get.height * 0.05),
 
                   /// Illustration
                   Image.asset(
                     'assets/logo/Illustration.png',
-                    height: height * 0.3, // ✅ responsive
+                    height: Get.height * 0.3, // ✅ responsive
                     fit: BoxFit.contain,
                   ),
 
-                  SizedBox(height: height * 0.03),
+                  SizedBox(height: Get.height * 0.03),
 
                   /// Title
                   Text(
@@ -48,7 +48,7 @@ class OnboardingVew extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(height: height * 0.20),
+                  SizedBox(height: Get.height * 0.18),
 
                   /// Terms
                   Text(
@@ -56,7 +56,7 @@ class OnboardingVew extends StatelessWidget {
                     style: TextStyle(color: Colors.grey.shade600, fontSize: 13),
                   ),
 
-                  SizedBox(height: height * 0.02),
+                  SizedBox(height: Get.height * 0.02),
 
                   /// Email Button
                   CustomButton(
@@ -65,7 +65,7 @@ class OnboardingVew extends StatelessWidget {
                     onTap: () => Get.toNamed(Routes.EMAILSIGNUP),
                   ),
 
-                  const SizedBox(height: 15),
+                  SizedBox(height: Get.height * 0.02),
 
                   /// Phone Button
                   CustomButton(
@@ -74,7 +74,7 @@ class OnboardingVew extends StatelessWidget {
                     onTap: () {},
                   ),
 
-                  const SizedBox(height: 20),
+                  SizedBox(height: Get.height * 0.02),
 
                   /// Login
                   GestureDetector(

@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: Routes.SPLACESCREEN,
       translations: AppTranslations(),
-      locale: const Locale("en","US"),
-      fallbackLocale: const Locale("en","US"),
+      locale: const Locale("en", "US"),
+      fallbackLocale: const Locale("en", "US"),
       supportedLocales: const [
         Locale('en', 'US'),
         Locale('hi', 'IN'),
@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
       getPages: AppPages.routes,
       title: 'Flutter Demo',
       theme: ThemeData(
-        
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),

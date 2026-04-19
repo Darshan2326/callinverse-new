@@ -1,7 +1,9 @@
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/core/widgets/buildTextField.dart';
 import 'package:calliverse/app/core/widgets/custom_button.dart';
+import 'package:calliverse/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class EmailsignupView extends StatelessWidget {
@@ -23,7 +25,8 @@ class EmailsignupView extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(height: height * 0.01),
+                  // SizedBox(height: height * 0.01),
+                  SizedBox(height: Get.height * 0.01),
 
                   /// 🔙 Back Button
                   Align(
@@ -34,7 +37,7 @@ class EmailsignupView extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(height: height * 0.05),
+                  SizedBox(height: Get.height * 0.05),
 
                   /// 📝 Title
                   Text(
@@ -47,7 +50,7 @@ class EmailsignupView extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(height: height * 0.01),
+                  SizedBox(height: Get.height * 0.01),
 
                   /// 📄 Subtitle
                   Text(
@@ -56,7 +59,7 @@ class EmailsignupView extends StatelessWidget {
                     style: TextStyle(fontSize: 14, color: TextColors.neutral),
                   ),
 
-                  SizedBox(height: height * 0.08),
+                  SizedBox(height: Get.height * 0.08),
                   CustomTextField(
                     hint: "Email",
                     validator: (value) {
@@ -69,12 +72,17 @@ class EmailsignupView extends StatelessWidget {
                       return null;
                     },
                   ),
-                  SizedBox(height: height * 0.02),
+                  SizedBox(height: Get.height * 0.02),
                   CustomTextField(isPassword: true, hint: 'Password'),
-                  SizedBox(height: height * 0.02),
+                  SizedBox(height: Get.height * 0.02),
                   CustomTextField(hint: "Confirm Password", isPassword: true),
-                  SizedBox(height: height * 0.06),
-                  CustomButton(title: "Continue", onTap: () {}),
+                  SizedBox(height: Get.height * 0.06),
+                  CustomButton(
+                    title: "Continue",
+                    onTap: () {
+                      Get.toNamed(Routes.EMAILVERIFY);
+                    },
+                  ),
 
                   // const SizedBox(height: 20),
                 ],
