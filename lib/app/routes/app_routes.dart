@@ -7,5 +7,6 @@ abstract class Routes {
   static const LOGIN = '/login';
   static const EMAILSIGNUP = "/emailsignup";
   static const EMAILVERIFY = "/emailverify";
+  static const PROFILEACCOUNT = "/profileaccount";
 
 }

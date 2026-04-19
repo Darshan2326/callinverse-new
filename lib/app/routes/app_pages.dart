@@ -10,6 +10,8 @@ import 'package:calliverse/app/Screens/LoginScreen/login_binding.dart';
 import 'package:calliverse/app/Screens/LoginScreen/login_view.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_binding.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_vew.dart';
+import 'package:calliverse/app/Screens/ProfileAccount/profile%20account_binding.dart';
+import 'package:calliverse/app/Screens/ProfileAccount/profileaccount_view.dart';
 import 'package:calliverse/app/Screens/SplaceScreen/splacescreen_binding.dart';
 import 'package:calliverse/app/Screens/SplaceScreen/splacescreen_view.dart';
 import 'package:get/get.dart';
@@ -45,6 +47,11 @@ class AppPages {
       name: Routes.EMAILVERIFY,
       page: () => EmailverifyView(),
       binding: EmailverifyBinding(),
+    ),
+    GetPage(
+      name: Routes.PROFILEACCOUNT,
+      page: () => ProfileaccountView(),
+      binding: ProfileaccountBinding(),
     ),
 
     GetPage(name: Routes.HOME, page: () => HomeView(), binding: HomeBinding()),
