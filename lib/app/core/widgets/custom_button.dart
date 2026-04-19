@@ -33,9 +33,7 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         child: isLoading
-            ? const CircularProgressIndicator(
-                color: AppColors.plainwhite,
-              )
+            ? const CircularProgressIndicator(color: AppColors.plainwhite)
             : Text(
                 title,
                 style: const TextStyle(
