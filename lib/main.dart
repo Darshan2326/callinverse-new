@@ -1,3 +1,4 @@
+import 'package:calliverse/app/core/translations/app_translations.dart';
 import 'package:calliverse/app/routes/app_pages.dart';
 import 'package:calliverse/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       initialRoute: Routes.SPLACESCREEN,
+      translations: AppTranslations(),
+      locale: const Locale("en","US"),
+      fallbackLocale: const Locale("en","US"),
+      supportedLocales: const [
+        Locale('en', 'US'),
+        Locale('hi', 'IN'),
+        Locale('gu', 'IN'),
+      ],
       getPages: AppPages.routes,
       title: 'Flutter Demo',
       theme: ThemeData(
