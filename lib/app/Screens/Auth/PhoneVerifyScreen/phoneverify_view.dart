@@ -1,10 +1,11 @@
-import 'package:calliverse/app/Screens/EmailVerification/emailverify_controller.dart';
+import 'package:calliverse/app/Screens/Auth/EmailVerification/emailverify_controller.dart';
+import 'package:calliverse/app/Screens/Auth/PhoneVerifyScreen/phoneverify_controller.dart';
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class EmailverifyView extends GetView<EmailverifyController> {
+class PhoneverifyView extends GetView<PhoneverifyController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +27,7 @@ class EmailverifyView extends GetView<EmailverifyController> {
               SizedBox(height: Get.height * 0.02),
 
               Text(
-                "We have sent you an Email with the code to eample@gmail.com",
+                "We have sent you an SMS with the code to +62 1309 - 1710 - 1920",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey),
               ),

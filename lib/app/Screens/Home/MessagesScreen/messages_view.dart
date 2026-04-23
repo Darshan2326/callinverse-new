@@ -1,9 +1,9 @@
-import 'package:calliverse/app/Screens/HomeScreen/home_controller.dart';
+import 'package:calliverse/app/Screens/Home/MessagesScreen/messages_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
 
-class HomeView extends GetView<HomeController> {
-  const HomeView({super.key});
+class messagesView extends GetView<messagesController> {
+  const messagesView({super.key});
 
   @override
   Widget build(BuildContext context) {

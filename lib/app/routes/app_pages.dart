@@ -1,19 +1,19 @@
 // 2️⃣ Define Pages with Bindings
 
-import 'package:calliverse/app/Screens/EmailSignUpScreen/emailsignup_binding.dart';
-import 'package:calliverse/app/Screens/EmailSignUpScreen/emailsignup_view.dart';
-import 'package:calliverse/app/Screens/EmailVerification/emailverify_binding.dart';
-import 'package:calliverse/app/Screens/EmailVerification/emailverify_view.dart';
-import 'package:calliverse/app/Screens/HomeScreen/home_binding.dart';
-import 'package:calliverse/app/Screens/HomeScreen/home_view.dart';
-import 'package:calliverse/app/Screens/LoginScreen/login_binding.dart';
-import 'package:calliverse/app/Screens/LoginScreen/login_view.dart';
+import 'package:calliverse/app/Screens/Auth/EmailSignUpScreen/emailsignup_binding.dart';
+import 'package:calliverse/app/Screens/Auth/EmailSignUpScreen/emailsignup_view.dart';
+import 'package:calliverse/app/Screens/Auth/EmailVerification/emailverify_binding.dart';
+import 'package:calliverse/app/Screens/Auth/EmailVerification/emailverify_view.dart';
+import 'package:calliverse/app/Screens/Home/MessagesScreen/messages_binding.dart';
+import 'package:calliverse/app/Screens/Home/MessagesScreen/messages_view.dart';
+import 'package:calliverse/app/Screens/Auth/LoginScreen/login_binding.dart';
+import 'package:calliverse/app/Screens/Auth/LoginScreen/login_view.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_binding.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_vew.dart';
-import 'package:calliverse/app/Screens/PhoneSignUpScreen/phonesignup_binding.dart';
-import 'package:calliverse/app/Screens/PhoneSignUpScreen/phonesignup_view.dart';
-import 'package:calliverse/app/Screens/PhoneVerifyScreen/phoneverify_binding.dart';
-import 'package:calliverse/app/Screens/PhoneVerifyScreen/phoneverify_view.dart';
+import 'package:calliverse/app/Screens/Auth/PhoneSignUpScreen/phonesignup_binding.dart';
+import 'package:calliverse/app/Screens/Auth/PhoneSignUpScreen/phonesignup_view.dart';
+import 'package:calliverse/app/Screens/Auth/PhoneVerifyScreen/phoneverify_binding.dart';
+import 'package:calliverse/app/Screens/Auth/PhoneVerifyScreen/phoneverify_view.dart';
 import 'package:calliverse/app/Screens/ProfileAccount/profile%20account_binding.dart';
 import 'package:calliverse/app/Screens/ProfileAccount/profileaccount_view.dart';
 import 'package:calliverse/app/Screens/SplaceScreen/splacescreen_binding.dart';
@@ -68,6 +68,10 @@ class AppPages {
       binding: PhoneverifyBinding(),
     ),
 
-    GetPage(name: Routes.HOME, page: () => HomeView(), binding: HomeBinding()),
+    GetPage(
+      name: Routes.HOME,
+      page: () => messagesView(),
+      binding: messagesBinding(),
+    ),
   ];
 }

@@ -1,4 +1,4 @@
-import 'package:calliverse/app/Screens/EmailSignUpScreen/emailsignup_controller.dart';
+import 'package:calliverse/app/Screens/Auth/EmailSignUpScreen/emailsignup_controller.dart';
 import 'package:get/instance_manager.dart';
 
 class EmailsignupBinding extends Bindings {

@@ -1,5 +1,5 @@
 import 'package:get/state_manager.dart';
 
-class HomeController extends GetxController{
+class messagesController extends GetxController{
   RxString wellcome = "This is the Home Screen".obs;
 }

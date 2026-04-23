@@ -1,4 +1,4 @@
-import 'package:calliverse/app/Screens/PhoneSignUpScreen/phonesignup_controller.dart';
+import 'package:calliverse/app/Screens/Auth/PhoneSignUpScreen/phonesignup_controller.dart';
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/core/widgets/buildTextField.dart';
 import 'package:calliverse/app/core/widgets/custom_button.dart';
