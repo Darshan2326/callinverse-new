@@ -1,4 +1,3 @@
-import 'package:calliverse/app/Screens/Auth/EmailVerification/emailverify_controller.dart';
 import 'package:calliverse/app/Screens/Auth/LoginScreen/login_controller.dart';
 import 'package:calliverse/app/core/theme/app_colors.dart';
 import 'package:calliverse/app/core/widgets/buildTextField.dart';

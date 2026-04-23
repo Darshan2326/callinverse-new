@@ -1,4 +1,3 @@
-import 'package:calliverse/app/Screens/Auth/PhoneSignUpScreen/phonesignup_controller.dart';
 import 'package:calliverse/app/Screens/Auth/PhoneVerifyScreen/phoneverify_controller.dart';
 import 'package:get/instance_manager.dart';
 

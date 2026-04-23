@@ -4,8 +4,8 @@ import 'package:calliverse/app/Screens/Auth/EmailSignUpScreen/emailsignup_bindin
 import 'package:calliverse/app/Screens/Auth/EmailSignUpScreen/emailsignup_view.dart';
 import 'package:calliverse/app/Screens/Auth/EmailVerification/emailverify_binding.dart';
 import 'package:calliverse/app/Screens/Auth/EmailVerification/emailverify_view.dart';
-import 'package:calliverse/app/Screens/Home/MessagesScreen/messages_binding.dart';
-import 'package:calliverse/app/Screens/Home/MessagesScreen/messages_view.dart';
+import 'package:calliverse/app/Screens/Home/BottomNaviBar_binding.dart';
+import 'package:calliverse/app/Screens/Home/BottomNaviBar_view.dart';
 import 'package:calliverse/app/Screens/Auth/LoginScreen/login_binding.dart';
 import 'package:calliverse/app/Screens/Auth/LoginScreen/login_view.dart';
 import 'package:calliverse/app/Screens/OnBording/onboarding_binding.dart';
@@ -69,9 +69,9 @@ class AppPages {
     ),
 
     GetPage(
-      name: Routes.HOME,
-      page: () => messagesView(),
-      binding: messagesBinding(),
+      name: Routes.BOTTOMNAVIBAR,
+      page: () => BottomNaviBarView(),
+      binding: BottomnavibarBinding(),
     ),
   ];
 }

@@ -93,7 +93,7 @@ class ProfileaccountView extends GetView<ProfileaccountController> {
                 CustomButton(
                   title: "Save",
                   onTap: () {
-                    Get.toNamed(Routes.HOME);
+                    Get.toNamed(Routes.BOTTOMNAVIBAR);
                   },
                 ),
 

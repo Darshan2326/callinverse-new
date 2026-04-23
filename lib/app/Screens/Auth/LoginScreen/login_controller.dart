@@ -4,6 +4,6 @@ import 'package:get/state_manager.dart';
 
 class LoginController extends GetxController {
   void HanfleLongin() {
-    Get.toNamed(Routes.HOME);
+    Get.toNamed(Routes.BOTTOMNAVIBAR);
   }
 }

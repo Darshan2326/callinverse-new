@@ -3,12 +3,11 @@
 abstract class Routes {
   static const SPLACESCREEN = "/splacescreen";
   static const ONBOARDING = "/onboarding";
-  static const HOME = '/home';
+  static const BOTTOMNAVIBAR = '/bottomnavibar';
   static const LOGIN = '/login';
   static const EMAILSIGNUP = "/emailsignup";
   static const EMAILVERIFY = "/emailverify";
   static const PROFILEACCOUNT = "/profileaccount";
   static const PHONESIGNUP = "/phonesignup";
   static const PHONEVERIFY = "/phoneverify";
-
 }
