@@ -78,7 +78,9 @@ class OnboardingVew extends StatelessWidget {
 
                   /// Login
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Get.toNamed(Routes.LOGIN);
+                    },
                     child: Text(
                       "login".tr,
                       style: TextStyle(
