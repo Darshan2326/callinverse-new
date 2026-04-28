@@ -14,6 +14,7 @@ import 'package:calliverse/app/core/widgets/glass_nav_bar.dart';
 
 class BottomnavibarController extends GetxController {
   RxInt currentIndex = 0.obs;
+  RxBool showBottomBar = true.obs;
 
    /// List of screens to display
   final List<Widget> screens = [
@@ -66,6 +67,13 @@ class BottomnavibarController extends GetxController {
   /// Change the current index
   void changeIndex(int index) {
     currentIndex.value = index;
+  }
+ void hideBars() {
+    showBottomBar.value = false;
+  }
+
+  void showBars() {
+    showBottomBar.value = true;
   }
 
   /// Handle floating action button press

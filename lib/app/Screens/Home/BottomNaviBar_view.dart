@@ -31,17 +31,43 @@ class BottomNaviBarView extends GetView<BottomnavibarController> {
             child: controller.screens[controller.currentIndex.value],
           ),
         ),
-        bottomNavigationBar: GlassNavBar(
+        // bottomNavigationBar: GlassNavBar(
+        //   currentIndex: controller.currentIndex.value,
+        //   items: controller.navItems,
+        //   onTap: (index) {
+        //     HapticFeedback.lightImpact();
+        //     controller.changeIndex(index);
+        //   },
+        // ),
+        // floatingActionButton: PulseFAB(
+        //   onPressed: controller.onFloatingActionButtonPressed,
+        // ),
+        bottomNavigationBar: Obx(() => AnimatedSlide(
+      duration: const Duration(milliseconds: 250),
+      offset: controller.showBottomBar.value
+          ? Offset.zero
+          : const Offset(0, 1),
+      child: AnimatedOpacity(
+        duration: const Duration(milliseconds: 250),
+        opacity: controller.showBottomBar.value ? 1 : 0,
+        child: GlassNavBar(
           currentIndex: controller.currentIndex.value,
           items: controller.navItems,
-          onTap: (index) {
-            HapticFeedback.lightImpact();
-            controller.changeIndex(index);
-          },
+          onTap: controller.changeIndex,
         ),
-        floatingActionButton: PulseFAB(
-          onPressed: controller.onFloatingActionButtonPressed,
-        ),
+      ),
+)),
+
+floatingActionButton: Obx(() => AnimatedScale(
+      duration: const Duration(milliseconds: 250),
+      scale: controller.showBottomBar.value ? 1 : 0,
+      child: controller.showBottomBar.value
+          ? PulseFAB(
+              onPressed:
+                  controller.onFloatingActionButtonPressed,
+            )
+          : const SizedBox(),
+)),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       );
     });
